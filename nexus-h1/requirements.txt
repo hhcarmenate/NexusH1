@@ -1,0 +1,35 @@
+# Nexus H1 — Python Dependencies
+
+# Google APIs
+google-auth>=2.22.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.1
+google-api-python-client>=2.95.0
+
+# HTTP client
+aiohttp>=3.8.5
+requests>=2.31.0
+
+# Configuration
+pyyaml>=6.0.1
+
+# OpenAI (STT/TTS)
+openai>=1.0.0
+
+# Google Gemini (free AI)
+google-genai>=1.0.0
+
+# ElevenLabs (TTS fallback)
+# Note: Install separately if needed
+# elevenlabs>=0.2.26
+
+# Audio (TTS playback + microphone recording)
+pygame>=2.5.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# SSH
+paramiko>=3.0.0
+
+# Utilities
+python-dotenv>=1.0.0

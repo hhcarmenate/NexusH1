@@ -1,0 +1,34 @@
+# Secrets
+.env
+secrets/*
+!secrets/.gitkeep
+
+# Audio files
+memory/audio/*.mp3
+memory/audio/*.wav
+
+# Logs
+memory/*.log
+logs/*.log
+logs/*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

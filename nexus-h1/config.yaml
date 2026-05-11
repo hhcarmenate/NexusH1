@@ -1,0 +1,52 @@
+agent:
+  name: "Nexus H1"
+  version: "0.1.0"
+  description: "Personal assistant for organization and communication"
+
+user:
+  name: "Henry"
+  timezone: "America/New_York"
+  language: "en"
+
+integrations:
+  gmail:
+    enabled: true
+    credentials_path: "secrets/gmail_credentials.json"
+  whatsapp:
+    enabled: false
+    session_path: "secrets/whatsapp_session"
+  telegram:
+    enabled: false
+    bot_token: "${TELEGRAM_BOT_TOKEN}"
+  notion:
+    enabled: true
+    token: "${NOTION_TOKEN}"
+  calendar:
+    enabled: true
+    provider: "google"
+    credentials_path: "secrets/gmail_credentials.json"
+
+ai:
+  enabled: true
+  model: "gpt-4o"
+  temperature: 0.7
+  max_history: 50
+  session_id: "default"
+
+voice:
+  enabled: true
+  stt_provider: "openai"
+  tts_provider: "openai"
+  tts_voice: "nova"
+
+notifications:
+  enabled: true
+  interval_minutes: 30
+  important_senders: []
+  check_calendar: true
+  check_gmail: true
+  check_notion: true
+
+memory:
+  daily_notes_path: "memory/{date}.md"
+  long_term_path: "memory/long_term.md"
